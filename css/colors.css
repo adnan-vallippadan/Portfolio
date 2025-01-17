@@ -1,0 +1,19 @@
+:root {    
+    --text-c-900: #111827;
+    --text-c-800: #1f2937;
+    --text-c-700: #374151;
+    --text-c-600: #4b5563;
+    --text-c-500: #6b7280;
+    --text-c-400: #9ca3af;
+    --text-c-300: #d1d5db;
+    --text-c-200: #e5e7eb;
+    --text-c-100: #f3f4f6;
+    --text-c-50: #f9fafb;
+    --text-c-0: #ffffff;
+
+    --primary-900: #E09200;
+    --primary-700: #F59F00;
+    --primary-500: #FFB833;
+    --primary-300: #FFC65C;
+    --primary-100: #FFC65C;
+  }
