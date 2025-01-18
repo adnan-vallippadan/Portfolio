@@ -16,6 +16,18 @@ p {
     line-height: 1.5;
 }
 
+.text-c-900 {
+    color: var(--text-c-900);
+}
+
+.text-c-800 {
+    color: var(--text-c-800);
+}
+
+.text-c-500 {
+    color: var(--text-c-500);
+}
+
 .mb-1 {
     margin-bottom: 1rem;
 }
@@ -60,14 +72,15 @@ p {
 
 .header-i {
     max-width: var(--maxWidth);
-    padding: 0.75rem 1.5rem;
+    padding: 0.25rem 1.5rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-i > img {
+
+.header-i>img {
     width: auto;
     height: 4rem;
 }
@@ -85,7 +98,10 @@ p {
 
 .hero-container,
 .about-container,
-.experience-container {
+.experience-container,
+.education-container,
+.contact-container,
+.footer-container {
     color: var(--text-c-900);
 }
 
@@ -146,7 +162,8 @@ p {
     border-radius: 1rem;
 }
 
-.experience-container .exp-outer, .education-container .education-outer {
+.experience-container .exp-outer,
+.education-container .education-outer {
     border-left-width: 2px;
     border-left-style: solid;
     padding: 1rem;
@@ -198,23 +215,87 @@ p {
     text-align: center;
     margin: 0.25rem;
 }
+
 .footer-container {
     background-color: var(--primary-700);
 }
+
 .footer-container .social-media {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
 }
-.footer-container .social-media > a {
+
+.footer-container .social-media>a {
     text-decoration: none;
 }
+
 .footer-container .social-media img {
     height: 2rem;
     width: 2rem;
 }
+
 .footer-container .footer-labels {
     text-align: center;
     color: var(--text-c-600);
+}
+
+.education-container {
+    background-color: var(--primary-100);
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .header-links {
+        display: none;
+    }
+
+    .hero-container>.container,
+    .about-container>.container,
+    .exp-outer .work-desctiption {
+        flex-wrap: wrap;
+    }
+
+    .hero-image-container>img,
+    .about-image-container>img {
+        height: auto;
+        width: 20rem;
+    }
+
+    .company-image-container {
+        display: none;
+    }
+
+    .hero-title-container {
+        text-align: center;
+    }
+
+    .hero-title-container .font-xx-large {
+        font-size: 2rem;
+    }
+
+    .hero-title-container .font-xxx-large {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-title-container .font-xx-large {
+        font-size: 1.5rem;
+    }
+
+    .hero-title-container .font-xxx-large {
+        font-size: 2.5rem;
+    }
+
+    .hero-image-container>img,
+    .about-image-container>img {
+        height: auto;
+        width: 14rem;
+    }
 }
