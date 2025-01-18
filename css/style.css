@@ -31,6 +31,16 @@ p {
     margin-right: auto;
 }
 
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-700);
+    color: var(--text-c-0);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -80,10 +90,6 @@ p {
 
 .hero-title-container {
     max-width: fit-content;
-}
-
-.hero-title-container #designation {
-    text-align: right;
 }
 
 .hero-title-container>p {
