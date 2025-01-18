@@ -14,16 +14,22 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="My Portfolio" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 </head>
 
 <body>
     <div class="main-container">
         <div class="header">
             <div class="header-i">
-                <p class="font-xxx-large font-black">
-                    <span class="text-outline-white">ADNAN</span>
-                    <span class="text-outline-black">VALLIPPADAN</span>
-                </p>
+                <img src="./img/logo/logo.png">
+                
 
                 <div class="header-links">
                     <a href="#home" class="font-semibold font-normal">Home</a>
@@ -31,7 +37,7 @@
                     <a href="#skills" class="font-semibold font-normal">Skills</a>
                     <a href="#experience" class="font-semibold font-normal">Experience</a>
                     <a href="#education" class="font-semibold font-normal">Education</a>
-                    
+                    <a href="#contact" class="font-semibold font-normal">Contact</a>
                 </div>
             </div>
         </div>
@@ -39,7 +45,7 @@
         <div class="hero-container" id="home">
             <div class="container">
                 <div class="hero-image-container">
-                    <img src="./img/profile-1.jpg" />
+                    <img src="./img/me.jpg" />
                 </div>
                 <div class="hero-title-container">
                     <p class="font-xx-large font-regular">I'm</p>
@@ -47,7 +53,7 @@
                         <span class="text-outline-white">ADNAN</span>
                         <span class="text-outline-black">VALLIPPADAN</span>
                     </p>
-                    <p class="font-xx-large font-regular" id="designation">Software Developer</p>
+                    <p class="font-xx-large font-regular" id="designation">Software Developer</p>                    
                 </div>
             </div>
         </div>
@@ -67,11 +73,11 @@
                         experience, and building software that drives efficiency and value.</p>
                     <p class="font-normal font-regular mb-1">With a background as a programming educator, I excel at
                         mentoring junior developers, fostering team collaboration, and promoting knowledge sharing to
-                        achieve collective growth. I’m passionate about leveraging modern technologies to create
+                        achieve collective growth. I'm passionate about leveraging modern technologies to create
                         efficient, reliable, and impactful software solutions.</p>
                 </div>
                 <div class="about-image-container">
-                    <img src="./img/profile-2.jpg" />
+                    <img src="./img/about.webp" />
                 </div>
 
             </div>
@@ -110,8 +116,8 @@
                         <figcaption class="font-medium font-small">CSS</figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/skills/TailwindCSS.png" alt="TailwindCSS">
-                        <figcaption class="font-medium font-small">TailwindCSS</figcaption>
+                        <img src="./img/skills/TailwindCSS.png" alt="Tailwind CSS">
+                        <figcaption class="font-medium font-small">Tailwind CSS</figcaption>
                     </figure>  
                     <figure>
                         <img src="./img/skills/Bootstrap.png" alt="Bootstrap">
@@ -159,7 +165,7 @@
                     </figure>
                     <figure>
                         <img src="./img/skills/IntelliJIDEA.png" alt="IntelliJ IDEA">
-                        <figcaption class="font-medium font-small">IntelliJIDEA</figcaption>
+                        <figcaption class="font-medium font-small">IntelliJ IDEA</figcaption>
                     </figure>
                     <figure>
                         <img src="./img/skills/VSCode.png" alt="VS Code">
@@ -355,13 +361,39 @@
             </div>
         </div>
 
-        <div class="contact-container">
+        <div class="contact-container" id="contact">
             <div class="container">
                 <p class="font-xx-large font-bold sub-headline">Contact</p>
                 <p class="font-normal font-regular mb-1 text-c-500">Have a question or an exciting opportunity to discuss? Let's connect and create something incredible together. I'm just an email away!</p>
                 <a class="btn-primary font-normal font-semibold" href="mailto:adnanvp9@gmail.com">Email Me</a>
             </div>
         </div>
+
+        <footer class="footer-container" id="footer">
+            <div class="container">
+                <div class="social-media mb-1">
+                    <a href="https://github.com/adnan-vallippadan" target="_blank">
+                        <img src="./img/social-media/github.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/adnan-vallippadan/" target="_blank">
+                        <img src="./img/social-media/linkedin.svg">
+                    </a>
+                    <a href="mailto:adnanvp9@gmail.com">
+                        <img src="./img/social-media/email.svg">
+                    </a>
+                    <a href="https://www.facebook.com/adnan.vp.9/">
+                        <img src="./img/social-media/facebook.svg" target="_blank">
+                    </a>
+                    <a href="https://www.instagram.com/adnan_vallippadan/">
+                        <img src="./img/social-media/instagram.svg" target="_blank">
+                    </a>                                        
+                </div>
+                <div class="font-small font-regular footer-labels">
+                    <p class="mb-0.5">Designed and Developed by Adnan Vallippadan.</p>
+                    <p>&copy; <span id="year"></span>All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </body>
