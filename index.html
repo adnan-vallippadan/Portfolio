@@ -12,31 +12,37 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="My Portfolio" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
 </head>
 
 <body>
     <div class="main-container">
         <div class="header">
             <div class="header-i">
-                <p class="font-xxx-large font-black">
-                    <span class="text-outline-white">ADNAN</span>
-                    <span class="text-outline-black">VALLIPPADAN</span>
-                </p>
-
+                <img src="./img/logo/logo.png">
                 <div class="header-links">
-                    <a href="#" class="font-semibold font-normal">Home</a>
-                    <a href="#" class="font-semibold font-normal">About</a>
-                    <a href="#" class="font-semibold font-normal">Contact</a>
+                    <a href="#home" class="font-semibold font-normal">Home</a>
+                    <a href="#about" class="font-semibold font-normal">About</a>
+                    <a href="#skills" class="font-semibold font-normal">Skills</a>
+                    <a href="#experience" class="font-semibold font-normal">Experience</a>
+                    <a href="#education" class="font-semibold font-normal">Education</a>
+                    <a href="#contact" class="font-semibold font-normal">Contact</a>
                 </div>
             </div>
         </div>
 
-        <div class="hero-container">
+        <div class="hero-container" id="home">
             <div class="container">
                 <div class="hero-image-container">
-                    <img src="./img/profile-1.jpg" />
+                    <img src="./img/me.jpg" />
                 </div>
                 <div class="hero-title-container">
                     <p class="font-xx-large font-regular">I'm</p>
@@ -49,7 +55,7 @@
             </div>
         </div>
 
-        <div class="about-container">
+        <div class="about-container" id="about">
             <div class="container">
                 <div>
                     <p class="font-xx-large font-bold sub-headline">About Me</p>
@@ -64,17 +70,17 @@
                         experience, and building software that drives efficiency and value.</p>
                     <p class="font-normal font-regular mb-1">With a background as a programming educator, I excel at
                         mentoring junior developers, fostering team collaboration, and promoting knowledge sharing to
-                        achieve collective growth. I’m passionate about leveraging modern technologies to create
+                        achieve collective growth. I'm passionate about leveraging modern technologies to create
                         efficient, reliable, and impactful software solutions.</p>
                 </div>
                 <div class="about-image-container">
-                    <img src="./img/profile-2.jpg" />
+                    <img src="./img/about.webp" />
                 </div>
 
             </div>
         </div>
 
-        <div class="skills-container">
+        <div class="skills-container" id="skills">
             <div class="container">
                 <p class="font-xx-large font-bold sub-headline sub-headline-white">Skills</p>
                 <div class="skill-images-container">
@@ -101,19 +107,19 @@
                     <figure>
                         <img src="./img/skills/HTML5.png" alt="HTML">
                         <figcaption class="font-medium font-small">HTML</figcaption>
-                    </figure>    
+                    </figure>
                     <figure>
                         <img src="./img/skills/CSS3.png" alt="CSS">
                         <figcaption class="font-medium font-small">CSS</figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/skills/TailwindCSS.png" alt="TailwindCSS">
-                        <figcaption class="font-medium font-small">TailwindCSS</figcaption>
-                    </figure>  
+                        <img src="./img/skills/TailwindCSS.png" alt="Tailwind CSS">
+                        <figcaption class="font-medium font-small">Tailwind CSS</figcaption>
+                    </figure>
                     <figure>
                         <img src="./img/skills/Bootstrap.png" alt="Bootstrap">
                         <figcaption class="font-medium font-small">Bootstrap</figcaption>
-                    </figure>  
+                    </figure>
                     <figure>
                         <img src="./img/skills/MongoDB.png" alt="MongoDB">
                         <figcaption class="font-medium font-small">MongoDB</figcaption>
@@ -156,7 +162,7 @@
                     </figure>
                     <figure>
                         <img src="./img/skills/IntelliJIDEA.png" alt="IntelliJ IDEA">
-                        <figcaption class="font-medium font-small">IntelliJIDEA</figcaption>
+                        <figcaption class="font-medium font-small">IntelliJ IDEA</figcaption>
                     </figure>
                     <figure>
                         <img src="./img/skills/VSCode.png" alt="VS Code">
@@ -170,7 +176,7 @@
             </div>
         </div>
 
-        <div class="experience-container">
+        <div class="experience-container" id="experience">
             <div class="container">
                 <p class="font-xx-large font-bold sub-headline">Experience</p>
                 <div class="exp-outer">
@@ -179,11 +185,9 @@
                             <p class="font-large font-semibold mb-1">Senior Software Developer</p>
                             <div class="mb-1">
                                 <a href="https://flysoft.eu/" target="_blank"
-                                    class="font-normal font-regular mb-1 text-c-500">
-                                    <span class="company-name">Flysoft Systems GmbH</span>
-                                    <span class="location">Germany (Remote)</span>
-                                    <span class="duration">June 2021 - Mar 2025</span>
-                                </a>
+                                    class="font-normal font-regular mb-1 text-c-500">Flysoft Systems GmbH</a>
+                                <p class="font-normal font-regular">Germany (Remote)</p>
+                                <p class="font-normal font-regular text-c-500 mb-1">June 2021 - Mar 2025</p>
                             </div>
                             <div class="work-desctiption">
                                 <div>
@@ -259,15 +263,13 @@
                             <p class="font-large font-semibold mb-1">Software Developer</p>
                             <div class="mb-1">
                                 <a href="https://www.esynergysoft.com/" target="_blank"
-                                    class="font-normal font-regular mb-1 text-c-500">
-                                    <span class="company-name">eSynergy Software Technologies</span>
-                                    <span class="location">Calicut, India</span>
-                                    <span class="duration">June 2019 - June 2021</span>
-                                </a>
+                                    class="font-normal font-regular mb-1 text-c-500">eSynergy Software Technologies</a>
+                                <p class="font-normal font-regular">Calicut, India</p>
+                                <p class="font-normal font-regular text-c-500 mb-1">June 2019 - June 2021</p>
                             </div>
                             <div class="work-desctiption">
                                 <div class="company-image-container">
-                                    <a href="https://www.esynergysoft.com/" target="_blank" class="flysoft">
+                                    <a href="https://www.esynergysoft.com/" target="_blank" class="esynergy">
                                         <img src="./img/company/esynergy_logo.png">
                                     </a>
                                 </div>
@@ -298,11 +300,9 @@
                             <p class="font-large font-semibold mb-1">Programming Faculty</p>
                             <div class="mb-1">
                                 <a href="https://www.gteceducation.com/" target="_blank"
-                                    class="font-normal font-regular mb-1 text-c-500">
-                                    <span class="company-name">Gtec Computer Education</span>
-                                    <span class="location">Malappuram, India</span>
-                                    <span class="duration">Nov 2018 - June 2019</span>
-                                </a>
+                                    class="font-normal font-regular mb-1 text-c-500">Gtec Computer Education</a>
+                                <p class="font-normal font-regular">Malappuram, India</p>
+                                <p class="font-normal font-regular text-c-500 mb-1">Nov 2018 - June 2019</p>
                             </div>
                             <div class="work-desctiption">
                                 <div>
@@ -317,7 +317,7 @@
                                     </ul>
                                 </div>
                                 <div class="company-image-container">
-                                    <a href="https://www.gteceducation.com/" target="_blank" class="flysoft">
+                                    <a href="https://www.gteceducation.com/" target="_blank" class="gtec">
                                         <img src="./img/company/gtec_logo.png">
                                     </a>
                                 </div>
@@ -328,6 +328,65 @@
             </div>
         </div>
 
+        <div class="education-container" id="education">
+            <div class="container">
+                <p class="font-xx-large font-bold sub-headline">Education</p>
+                <div class="education-outer">
+                    <div class="education-1 mb-1">
+                        <p class="font-large font-semibold mb-1">B.Tech (Electrical & Electronics Engineering)</p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">Govt Engineering College Wayanad, Kerala
+                        </p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">2014 - 2018</p>
+                    </div>
+                    <div class="education-2 mb-1">
+                        <p class="font-large font-semibold mb-1">Higher Secondary (Computer Science)</p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">HMY HSS Manjeri, Kerala</p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">2011 -2013</p>
+                    </div>
+                    <div class="education-3">
+                        <p class="font-large font-semibold mb-1">High School</p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">THS Manjeri, Kerala</p>
+                        <p class="font-normal font-regular mb-0.5 text-c-500">2008 -2011</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contact-container" id="contact">
+            <div class="container">
+                <p class="font-xx-large font-bold sub-headline">Contact</p>
+                <p class="font-normal font-regular mb-1 text-c-500">Have a question or an exciting opportunity to
+                    discuss? Let's connect and create something incredible together. I'm just an email away!</p>
+                <a class="btn-primary font-normal font-semibold" href="mailto:adnanvp9@gmail.com">Email Me</a>
+            </div>
+        </div>
+
+        <footer class="footer-container" id="footer">
+            <div class="container">
+                <div class="social-media mb-1">
+                    <a href="https://github.com/adnan-vallippadan" target="_blank">
+                        <img src="./img/social-media/github.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/adnan-vallippadan/" target="_blank">
+                        <img src="./img/social-media/linkedin.svg">
+                    </a>
+                    <a href="mailto:adnanvp9@gmail.com">
+                        <img src="./img/social-media/email.svg">
+                    </a>
+                    <a href="https://www.facebook.com/adnan.vp.9/">
+                        <img src="./img/social-media/facebook.svg" target="_blank">
+                    </a>
+                    <a href="https://www.instagram.com/adnan_vallippadan/">
+                        <img src="./img/social-media/instagram.svg" target="_blank">
+                    </a>
+                </div>
+                <div class="font-small font-regular footer-labels">
+                    <p class="mb-0.5">Designed and Developed by Adnan&nbsp;Vallippadan.</p>
+                    <p>&copy; <span id="year"></span>All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </body>
