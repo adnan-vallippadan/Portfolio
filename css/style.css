@@ -102,7 +102,7 @@ p {
     padding: 1rem;
     position: fixed;
     left: 0;
-    right: 0;    
+    right: 0;
     border-top: 2px solid var(--text-c-900);
     border-bottom: 2px solid var(--text-c-900);
 }
@@ -114,14 +114,17 @@ p {
     color: var(--text-c-900);
     display: block;
 }
+
 .menu-button img {
     height: 1.5rem;
     width: 1.5rem;
 }
+
 .menu-button {
     display: none;
 }
-.menu-button button {    
+
+.menu-button button {
     background-color: transparent;
     border: 0;
     padding: 0.5rem;
@@ -278,6 +281,64 @@ p {
     background-color: var(--primary-100);
 }
 
+#loading-animation {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--text-c-0);
+    margin: auto;
+}
+
+#loading-animation .loader {
+    position: relative;
+    height: 100%;
+}
+
+#loading-animation .outer,
+#loading-animation .middle,
+#loading-animation .inner {
+    border: 3px solid transparent;
+    border-top-color: var(--primary-700);
+    border-right-color: var(--primary-700);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#loading-animation .outer {
+    width: 3.5em;
+    height: 3.5em;
+    margin-left: -1.75em;
+    margin-top: -1.75em;
+    animation: spin 2s linear infinite;
+}
+
+#loading-animation .middle {
+    width: 2.1em;
+    height: 2.1em;
+    margin-left: -1.05em;
+    margin-top: -1.05em;
+    animation: spin 1.75s linear reverse infinite;
+}
+
+#loading-animation .inner {
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: -0.4em;
+    margin-top: -0.4em;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 /* Media Queries */
@@ -287,9 +348,11 @@ p {
     .header-links {
         display: none;
     }
+
     .mobile-header {
         display: block;
     }
+
     .menu-button {
         display: block;
     }

@@ -1,6 +1,14 @@
 let site = {
     initialize: function() {        
         site.setCurrentYear();
+        site.initializeLoader();
+    },
+
+    initializeLoader: function() {
+        setTimeout(() => {
+            let element = document.getElementById("loading-animation");
+            element.style.display = 'none';
+        }, 500);
     },
 
     setCurrentYear: function() {
