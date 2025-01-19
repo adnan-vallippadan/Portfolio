@@ -96,6 +96,39 @@ p {
     color: var(--text-c-0);
 }
 
+.mobile-header {
+    display: none;
+    background-color: var(--primary-700);
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;    
+    border-top: 2px solid var(--text-c-900);
+    border-bottom: 2px solid var(--text-c-900);
+}
+
+.mobile-header a {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    text-decoration: none;
+    color: var(--text-c-900);
+    display: block;
+}
+.menu-button img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.menu-button {
+    display: none;
+}
+.menu-button button {    
+    background-color: transparent;
+    border: 0;
+    padding: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 .hero-container,
 .about-container,
 .experience-container,
@@ -254,6 +287,12 @@ p {
     .header-links {
         display: none;
     }
+    .mobile-header {
+        display: block;
+    }
+    .menu-button {
+        display: block;
+    }
 
     .hero-container>.container,
     .about-container>.container,
@@ -296,6 +335,6 @@ p {
     .hero-image-container>img,
     .about-image-container>img {
         height: auto;
-        width: 14rem;
+        width: 18rem;
     }
 }
