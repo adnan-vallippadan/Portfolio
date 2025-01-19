@@ -11,7 +11,15 @@
     --text-c-50: #f9fafb;
     --text-c-0: #ffffff;
 
-    --primary-900: #E09200;
+    --primary-900: #0000E0;
+    --primary-700: #5C5CFF;   
+    --primary-100: #EBEBFF;
+
+    /* --primary-900: #E09200;
     --primary-700: #F59F00;   
-    --primary-100: #FFF1D6;
+    --primary-100: #FFF1D6; */
+
+    /* --primary-900: #833470;
+    --primary-700: #A0408A;   
+    --primary-100: #E8C5E0; */
   }
