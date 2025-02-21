@@ -87,7 +87,7 @@ p {
 
 .header-links>a {
     text-decoration: none;
-    color: var(--text-c-900);
+    color: var(--text-c-800);
     margin-left: 1rem;
 }
 
@@ -274,7 +274,7 @@ p {
 
 .footer-container .footer-labels {
     text-align: center;
-    color: var(--text-c-600);
+    color: var(--text-c-900);
 }
 
 .education-container {
