@@ -42,7 +42,7 @@
                     <a href="#education" class="font-semibold font-normal">Education</a>
                     <a href="#contact" class="font-semibold font-normal">Contact</a>
                 </div>
-                <div class="menu-button" >
+                <div class="menu-button">
                     <button @click="openMenu = !openMenu">
                         <img src="./img/icons/menu.svg">
                     </button>
@@ -56,7 +56,7 @@
                 <a href="#education" class="font-semibold font-normal" @click="openMenu = false">Education</a>
                 <a href="#contact" class="font-semibold font-normal" @click="openMenu = false">Contact</a>
             </div>
-        </div>        
+        </div>
 
         <div class="hero-container" id="home">
             <div class="container">
@@ -162,7 +162,7 @@
                     <figure>
                         <img src="./img/skills/Laravel.png" alt="Laravel">
                         <figcaption class="font-medium font-small">Laravel</figcaption>
-                    </figure>                    
+                    </figure>
                     <figure>
                         <img src="./img/skills/BitBucket.png" alt="BitBucket">
                         <figcaption class="font-medium font-small">BitBucket</figcaption>
@@ -174,7 +174,7 @@
                     <figure>
                         <img src="./img/skills/Jira.png" alt="Jira">
                         <figcaption class="font-medium font-small">Jira</figcaption>
-                    </figure>                    
+                    </figure>
                 </div>
             </div>
         </div>
@@ -396,14 +396,22 @@
                 <div class="outer"></div>
                 <div class="middle"></div>
                 <div class="inner"></div>
-              </div>
-              
+            </div>
         </div>
 
     </div>
 
     <script type="text/javascript">
         site.initialize();
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11XJTH74Q6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-11XJTH74Q6');
     </script>
 </body>
 
